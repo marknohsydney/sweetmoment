@@ -32,7 +32,7 @@
           <a href="#order">How to Order</a>
           <a href="#faq">FAQ</a>
         </nav>
-        <a class="button button-primary button-small" href="#enquiry">Order Enquiry</a>
+        <a class="button button-primary button-small" href="#enquiry-form">Order Enquiry</a>
       </header>
 
       <main id="top">
@@ -40,13 +40,17 @@
           <div class="hero-copy">
             <p class="eyebrow">Handmade in Brisbane</p>
             <h1>Custom cakes for your sweetest moments.</h1>
+            <p class="hero-lead">
+              Thoughtful celebration cakes for birthdays, baby showers,
+              anniversaries, and family gatherings.
+            </p>
             <p class="hero-text">
               Handmade custom cakes for birthdays, anniversaries, baby showers,
               family gatherings, and special celebrations. Pickup or local
               delivery available across Brisbane.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#enquiry">Start Your Order</a>
+              <a class="button button-primary" href="#enquiry-form">Start Your Order</a>
               <a class="button button-secondary" href="#cakes">View Menu</a>
             </div>
             <ul class="hero-badges" aria-label="Service highlights">
@@ -56,21 +60,26 @@
             </ul>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
+          <div class="hero-visual">
             <div class="cake-card">
-              <div class="cake-illustration">
-                <div class="cake-top"></div>
-                <div class="cake-middle"></div>
-                <div class="cake-base"></div>
-                <div class="cake-stand"></div>
+              <div class="hero-photo-frame">
+                <img
+                  class="hero-photo"
+                  src="img/cake003.jpg"
+                  alt="Happy family celebrating together with a Sweet Moment cake"
+                />
+                <div class="hero-photo-caption">
+                  <span>Real moments</span>
+                  <strong>Warm cakes, happy tables, unforgettable photos.</strong>
+                </div>
               </div>
               <div class="cake-card-copy">
                 <p class="eyebrow">Signature Style</p>
-                <h2>Vintage heart cakes, bento messages, and party cupcakes.</h2>
+                <h2>Made for joyful family moments, from candles to the first slice.</h2>
                 <p>
-                  Soft colours, thoughtful details, and celebration-ready
-                  finishes designed to feel personal from first look to last
-                  bite.
+                  Thoughtful cakes that feel right at home in birthdays, family
+                  gatherings, and the kind of celebrations people remember for
+                  years.
                 </p>
               </div>
             </div>
@@ -104,9 +113,13 @@
             </p>
           </div>
           <div class="value-grid">
-            <article class="value-card">
-              <h3>Made to order</h3>
-              <p>Freshly prepared cakes crafted just for your event.</p>
+            <article class="value-card value-card-large">
+              <h3>Fresh, personal, and made to order.</h3>
+              <p>
+                Each cake is prepared around your celebration, not pulled from a
+                shelf. Colours, message, and mood can all be tailored to the
+                moment.
+              </p>
             </article>
             <article class="value-card">
               <h3>Custom details</h3>
@@ -130,6 +143,9 @@
           </div>
           <div class="product-grid">
             <article class="product-card featured">
+              <div class="product-photo-frame">
+                <img class="product-photo" src="img/cake002.jpg" alt="Decorative Sweet Moment celebration cake" />
+              </div>
               <div class="product-label">Best for gifts</div>
               <h3>Signature Bento Message Cake</h3>
               <p>
@@ -143,11 +159,14 @@
               </ul>
               <div class="product-footer">
                 <strong>From A$49</strong>
-                <a href="#enquiry">Enquire this cake</a>
+                <a href="#enquiry-form">Enquire this cake</a>
               </div>
             </article>
 
             <article class="product-card">
+              <div class="product-photo-frame">
+                <img class="product-photo" src="img/cake004.jpg" alt="Elegant premium Sweet Moment cakes styled for celebration" />
+              </div>
               <div class="product-label">Signature style</div>
               <h3>Vintage Heart Cake</h3>
               <p>
@@ -161,11 +180,14 @@
               </ul>
               <div class="product-footer">
                 <strong>From A$109</strong>
-                <a href="#enquiry">Enquire this cake</a>
+                <a href="#enquiry-form">Enquire this cake</a>
               </div>
             </article>
 
             <article class="product-card">
+              <div class="product-photo-frame">
+                <img class="product-photo" src="img/cake005.jpg" alt="Colorful party cakes for festive celebrations" />
+              </div>
               <div class="product-label">Party ready</div>
               <h3>Party Cupcake Box</h3>
               <p>
@@ -179,7 +201,7 @@
               </ul>
               <div class="product-footer">
                 <strong>From A$32</strong>
-                <a href="#enquiry">Enquire this cake</a>
+                <a href="#enquiry-form">Enquire this cake</a>
               </div>
             </article>
           </div>
@@ -223,7 +245,7 @@
               panel with product or event images to turn visual curiosity into
               immediate trust.
             </p>
-            <a class="button button-secondary" href="#enquiry">Book your date</a>
+            <a class="button button-secondary" href="#enquiry-form">Book your date</a>
           </div>
           <div class="gallery-grid" aria-label="Photo gallery placeholders for future cake photography">
             <div class="gallery-card tall">
@@ -361,7 +383,7 @@
             </div>
           </div>
 
-          <form class="enquiry-form">
+          <form class="enquiry-form" id="enquiry-form">
             <label>
               Occasion
               <input type="text" placeholder="Birthday, baby shower, office event..." />
