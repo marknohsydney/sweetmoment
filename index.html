@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="page-shell">
@@ -383,34 +384,58 @@
             </div>
           </div>
 
-          <form class="enquiry-form" id="enquiry-form">
+          <form
+            class="enquiry-form"
+            id="enquiry-form"
+            action="https://formsubmit.co/marknoh.sydney@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Sweet Moment Cakes enquiry" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_autoresponse" value="Thanks for your enquiry to Sweet Moment Cakes. We have received your request and will get back to you by email soon." />
+            <input type="hidden" name="_url" id="form-url-field" value="" />
+            <input type="hidden" name="_next" id="form-next-field" value="" />
+            <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" />
+            <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email address
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
             <label>
               Occasion
-              <input type="text" placeholder="Birthday, baby shower, office event..." />
+              <input type="text" name="occasion" placeholder="Birthday, baby shower, office event..." required />
             </label>
             <label>
               Preferred date
-              <input type="text" placeholder="DD / MM / YYYY" />
+              <input type="date" name="preferred_date" required />
             </label>
             <label>
               Cake style
-              <input type="text" placeholder="Bento cake, heart cake, cupcakes..." />
+              <input type="text" name="cake_style" placeholder="Bento cake, heart cake, cupcakes..." required />
             </label>
             <label>
               Pickup or delivery
-              <select>
+              <select name="pickup_or_delivery" required>
                 <option>Pickup</option>
                 <option>Local delivery</option>
               </select>
             </label>
             <label class="full-width">
               Design notes
-              <textarea rows="5" placeholder="Colours, message on cake, inspiration, budget, and any extra details."></textarea>
+              <textarea
+                rows="5"
+                name="design_notes"
+                placeholder="Colours, message on cake, inspiration, budget, and any extra details."
+                required
+              ></textarea>
             </label>
-            <button class="button button-primary" type="button">Submit Enquiry</button>
+            <button class="button button-primary" type="submit">Send Enquiry</button>
             <p class="form-note">
-              Replace this button with your live order form, Instagram link, or
-              messaging integration when you're ready.
+              Share your details and we will reply by email with the next steps.
             </p>
           </form>
         </section>
