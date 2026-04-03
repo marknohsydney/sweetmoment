@@ -1,0 +1,18 @@
+{
+  "name": "Sweet Moment Cakes",
+  "short_name": "Sweet Moment",
+  "description": "Custom cakes in Brisbane for birthdays, baby showers, anniversaries, and events.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf5ef",
+  "theme_color": "#8d5c4b",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
